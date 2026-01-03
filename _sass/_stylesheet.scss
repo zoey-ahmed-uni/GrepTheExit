@@ -12,6 +12,7 @@ $tritary-color: #877F94;
   --padding: 12px;
   --border-radius: 12px;
   --header-font-size: 2em;
+  --header-font-size-mobile: 1.5em;
   --subtitle-font-size: 0.8em;
   --transition-duration: 300ms;
 }
@@ -40,6 +41,10 @@ body {
 
   & > main {
     border: none;
+    * > img {
+      max-width: 100%;
+    }
+    margin-bottom: var(--padding);
   }
 
   & > header {
@@ -57,6 +62,15 @@ body {
     padding: var(--padding);
     grid-column: full-width;
   }
+}
+
+a {
+  text-decoration: none;
+  color: $tritary-color;
+}
+
+h1,h3,h4 {
+  text-align: center;
 }
 
 // Navigation + Sidebar
@@ -184,6 +198,72 @@ body {
   animation: cursor 1.5s infinite;
 }
 
+// Bar of links on the top of the page.
+.button-link-single {
+  display: grid;
+  justify-content: center;
+  & > div {
+    display: grid;
+    border: solid;
+    border-width: calc(var(--border-radius) / 2);
+    border-color: $tritary-color;
+    border-radius: calc(var(--border-radius) * 2);
+    padding: calc(var(--padding) / 2);
+
+    & > .button-content > div {
+      grid-gap: var(--padding);
+      padding: 0 var(--padding);
+    }
+  }
+}
+
+.button-link-group {
+  display: flex;
+  justify-content: center;
+  border: solid;
+  border-width: calc(var(--border-radius) / 2);
+  border-color: $tritary-color;
+  border-radius: calc(var(--border-radius) * 2);
+  padding: calc(var(--padding) / 2);
+
+  & > a {
+    flex: 1 1 0px;
+  }
+}
+
+.button-content {
+  background-color: $secondary-color;
+  border: solid;
+  border-width: calc(var(--border-radius) / 2);
+  border-radius: var(--border-radius);
+  border-color: $primary-color;
+  padding: calc(var(--padding) / 2);
+
+  &:hover, &:focus {
+    background-color: $primary-color;
+    color: $secondary-color;
+    border-color: $secondary-color;
+  }
+
+  &:hover {
+    transform: translateY(5%);
+    transition-duration: var(--transition-duration);
+  }
+
+  & > div {
+    display: grid;
+    align-items: center;
+    grid-template-columns: auto auto;
+    & > img {
+      width: 40px;
+      height: 40px;
+    }
+    & > p {
+      font-weight: 700;
+    }
+  }
+}
+
 @keyframes cursor {
   0%, 100% {
     opacity: 0;
@@ -200,23 +280,18 @@ body {
   font-weight: bold;
 }
 
-img {
-  width: 200px;
-}
+
 
 .icons {
   width: 32px;
   height: 32px;
 }
 
-a {
-  text-decoration: none;
-  color: $tritary-color;
-}
-
 @media screen and ($mobile) {
+
   body > header {
     padding: var(--padding) 0px;
+    font-size: var(--header-font-size-mobile);
   }
 
   .center-item {
@@ -238,6 +313,14 @@ a {
 
   .pop-over {
     right: calc(0% + (var(--padding) * 3.5) + 16px);
+  }
+
+  .button-content { & > div {
+      grid-auto-flow: rows;
+      grid-template-columns: auto;
+      grid-template-rows: auto auto;
+      justify-content: center;
+    }
   }
 }
 
