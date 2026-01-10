@@ -21,12 +21,22 @@ title: Deliverables
 ### Architecture
 {% include download.html download="/GrepTheExit/assets/pdfs/Arch1.pdf" name="Architecture" %}
 
-#### Images
+#### Graphs
 ![Arch1](/GrepTheExit/assets/graphs/arch1.png)
 ![Arch1](/GrepTheExit/assets/graphs/arch2.png)
 ![Arch1](/GrepTheExit/assets/graphs/arch3.png)
 ![Arch1](/GrepTheExit/assets/graphs/arch4.png)
 ![Arch1](/GrepTheExit/assets/graphs/arch5.png)
+
+#### CRC Cards
+![Exam Question Screen](/GrepTheExit/assets/crc-cards/exam.png)
+![Inventory](/GrepTheExit/assets/crc-cards/inventory.png)
+![Inventory Item](/GrepTheExit/assets/crc-cards/inventory_item.png)
+![Keypad](/GrepTheExit/assets/crc-cards/keypad.png)
+![Keypad Screen](/GrepTheExit/assets/crc-cards/keypad_screen.png)
+![Locker](/GrepTheExit/assets/crc-cards/locker.png)
+![NPC](/GrepTheExit/assets/crc-cards/npc.png)
+![Portals](/GrepTheExit/assets/crc-cards/portal.png)
 
 ### Method selection and planning
 {% include download.html download="/GrepTheExit/assets/pdfs/Plan1.pdf" name="Planning" %}
