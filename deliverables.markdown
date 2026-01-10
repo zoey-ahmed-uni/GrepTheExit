@@ -3,15 +3,8 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: page 
-title: Deliverables 
+title: Previous Deliverables 
 ---
-
-## New Deliverables 
-- Change report: <TODO> 
-- Implementation: <TODO> 
-- Testing: <TODO> 
-- User Evaluation: <TODO> 
-- Continuous Integration: <TODO>
 
 ## Previous Deliverables 
 
