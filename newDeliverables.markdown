@@ -6,9 +6,13 @@ layout: page
 title: New Deliverables 
 ---
 
-## New Deliverables 
-- Change report: <TODO> 
-- Implementation: <TODO> 
-- Testing: <TODO> 
-- User Evaluation: <TODO> 
-- Continuous Integration: <TODO>
+### Change report 
+{% include download.html download="/GrepTheExit/assets/pdfs/Change2.pdf" name="Change" %}
+### Implementation 
+{% include download.html download="/GrepTheExit/assets/pdfs/Impl2.pdf" name="Implementation" %}
+### Testing 
+{% include download.html download="/GrepTheExit/assets/pdfs/Test2.pdf" name="Testing" %}
+### User Evaluation 
+{% include download.html download="/GrepTheExit/assets/pdfs/Eval2.pdf" name="User Evaluation" %}
+### Continuous Integration
+{% include download.html download="/GrepTheExit/assets/pdfs/CI2.pdf" name="Continuous Integration" %}
